@@ -1,0 +1,12 @@
+
+
+<h1>Change My Info</h1>
+
+<form action="<%= user_url(@user) %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <label for="">Username:
+        <input type="text" name="user[username]" value="<%=@user.username%>">
+    </label>
+
+    <input type="submit" value="Save Profile">
+</form>

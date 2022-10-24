@@ -1,0 +1,9 @@
+
+<h1>Here are all the users!</h1>
+
+<ul>
+<% @users.each do |user| %>
+    <%# @user = user %>
+    <%= render 'user', {user: user, action: :index} %>
+<% end %>
+</ul>
